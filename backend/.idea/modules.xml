@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se.example2.softhouse.iml" filepath="$PROJECT_DIR$/.idea/modules/se.example2.softhouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se.example2.softhouse_main.iml" filepath="$PROJECT_DIR$/.idea/modules/se.example2.softhouse_main.iml" group="se.example2.softhouse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/se.example2.softhouse_test.iml" filepath="$PROJECT_DIR$/.idea/modules/se.example2.softhouse_test.iml" group="se.example2.softhouse" />
+    </modules>
+  </component>
+</project>

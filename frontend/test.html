@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <title>Fe@r</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading" style="background-color: lightgray;" >
+            <div class="center">
+                <figure>
+                    <img src="exam-logo.png" class="img-rounded" alt=" responsive image" width="500" height="90">
+                </figure>
+            </div>
+        </div>
+
+        <div class="panel-body" style="background-color: lightgray;" >
+            <ul data-spy="affix" data-offset-top="25">
+                <li style="float: left;"><a href="index.html" style="background-color: #1b6d85">Home</a></li>
+                <li style="float: left;"><a class="active" href="#" style="background-color: #1b6d85">Questions</a></li>
+                <li style="float: left;"><a href="#" style="background-color: #1b6d85">Exam</a></li>
+                <li style="float:right"><a href="#">Log out</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-xs-5 text-center">
+                <div ng-view></div>
+            </div>
+            <div class="col-xs-2">
+
+            </div>
+            <div class="col-xs-5 text-center">
+                <choosequestion>{{vm}}</choosequestion>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="footer">
+    CopyRights
+</div>
+</body>
+
+<script src="app/Admin/services/note.service.js"></script>
+<script src="app/Admin/services/choice.service.js"></script>
+<script src="app/note/note.controller.js"></script>
+<script src="app/notes/notes.controller.js"></script>
+<script src="app/note-form/note-form.controller.js"></script>
+<script src="app/old_questions/add-question.controller.js"></script>
+<script src="app/old_questions/choosequestion.controller.js"></script>
+<script src="app/Exam/add-to-exam.controller.js"></script>
+<script src="app/config.js"></script>
+<script src="app/app.js"></script>
+</html>

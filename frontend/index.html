@@ -1,0 +1,62 @@
+<!doctype html>
+<html ng-app="app">
+
+<head>
+    <title>TestoMETER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    -->
+</head>
+
+<body>
+
+    <div class="container" style="background-color: #f7f7f7">
+        <div class="row">
+            <div class="col-xs-12" style="background-color: lightgray;" >
+                <div class="center">
+                    <img src="exam-logo.png" class="img-rounded" alt=" responsive image" width="500" height="90">
+                </div>
+            </div>
+
+            <div class=" col-xs-12" style="background-color: lightgray;" >
+            <ul data-spy="affix" data-offset-top="25">
+                    <li style="float: left;"><a href="index.html" style="background-color: #1b6d85">Home</a></li>
+                    <li style="float: left;"><a href="#/register" style="background-color: #1b6d85">Registration</a></li>
+                    <li style="float: left;"><a href="#/xam" style="background-color: #1b6d85">Exam</a></li>
+                    <li style="float:right"><a href="#">Log out</a></li>
+                </ul>
+            </div>
+             <div class="row">
+                <div class="col-xs-8">
+                     <div ng-view style="margin: 2%"></div>
+                </div>
+            </div>
+
+        <div class="footer">
+            CopyRights
+        </div>
+        </div>
+        </div>
+</body>
+
+
+
+<script src="app/Admin/services/choice.service.js"></script>
+<script src="app/Admin/services/exams.service.js"></script>
+<script src="app/old_questions/add-question.controller.js"></script>
+<script src="app/old_questions/choosequestion.controller.js"></script>
+<script src="app/Admin/exams/exams.controller.js"></script>
+<script src="app/Admin/choices/add-choices.controller.js"></script>
+<script src="app/Admin/questions/add-questions.controller.js"></script>
+<script src="app/Admin/services/questions.service.js"></script>
+<script src="app/Admin/Registration/registration.controller.js"></script>
+<script src="app/Admin/services/register.service.js"></script>
+<script src="app/config.js"></script>
+<script src="app/app.js"></script>
+</html>

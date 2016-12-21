@@ -1,0 +1,19 @@
+
+assets:
+  overrides:
+    /: ../frontend/
+
+server:
+  rootPath: '/api/*'
+
+
+database:
+      #the name of db, h2 in our case
+      driverClass: org.h2.Driver
+      #username
+      user: sa
+      #password
+      password:
+      #JDBC URL
+      url: jdbc:h2:~/fear
+
